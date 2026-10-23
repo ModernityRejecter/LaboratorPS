@@ -34,4 +34,7 @@ def ex7():
     plt.savefig("ex7.pdf")
     plt.show()
 
+    # a) frecventa de esantionare este redusa la un sfert, astfel graficul isi pierde din rezolutie
+    # b) semnalul este acelasi, dar diferenta observabila este decalarea la dreapta putin pe axa timpului,
+    # din cauza timpului de inceput dat de t3 care porneste de la indicele 1 in loc de 0
 ex7()
