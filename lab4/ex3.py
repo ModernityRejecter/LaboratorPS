@@ -8,11 +8,11 @@ sinus = lambda f0, t, phi: np.sin(2 * np.pi * f0 * t + phi)
 above_nyq_f = 2450
 
 f1 = 300
-f2 = f1 + above_nyq_f
-f3 = f1 - above_nyq_f
+f2 = 640
+f3 = -40
 
 t = np.linspace(0, 1, num = 100000)
-above_nyq_t = np.linspace(0, 1, num = above_nyq_f)
+above_nyq_t = np.arange(0, 1, step = 1/above_nyq_f)
 
 x1 = sinus(f1, t, 0)
 x2 = sinus(f2, t, 0)

@@ -12,7 +12,7 @@ f2 = f1 + sub_nyq_f
 f3 = f1 - sub_nyq_f # -40, sin(-x) = -sin(x) 
 
 t = np.linspace(0, 1, num = 100000)
-sub_nyq_t = np.linspace(0, 1, num = sub_nyq_f)
+sub_nyq_t = np.arange(0, 1, step = 1/sub_nyq_f)
 
 x1 = sinus(f1, t, 0)
 x2 = sinus(f2, t, 0)
